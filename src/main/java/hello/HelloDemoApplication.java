@@ -20,7 +20,7 @@ public class HelloDemoApplication {
 class HelloRestController{
 	@RequestMapping("/index/{name}")
 	public String getName(@PathVariable(value = "name") String name){
-		String response = "Hai " + name + ", message received on: " + new Date();
+		String response = "Hai " + name + "VISHAM theerunno";
 		return response;
 	}
 
