@@ -33,5 +33,11 @@ public class EndPoint {
 		logger.debug("Fetching by employee name");
 		return employeeService.findEmployeeByName(name);
 	}
+	@PostMapping(value = "/createSingle")
+	public String createEmployee(@RequestBody Employee employee){
+		logger.debug("Saving employees using nitrite.");
+		employeeService.createSingleEmployee(employee);
+		return "Employee created!";
+	}
 
 }
