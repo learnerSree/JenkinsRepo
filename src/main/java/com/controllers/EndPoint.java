@@ -28,5 +28,10 @@ public class EndPoint {
 		employeeService.createEmployee(employees);
 		return "Employee created!";
 	}
+	@GetMapping("/get/{name}")
+	public Employee employeeByName(@PathVariable(value = "name") String name){
+		logger.debug("Fetching by employee name");
+		return employeeService.findEmployeeByName(name);
+	}
 
 }

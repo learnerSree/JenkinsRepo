@@ -6,4 +6,6 @@ import java.util.List;
 public interface EmployeeService {
 	public void createEmployee(List<Employee> employee);
 	public Collection<Employee> getAllEmployee();
+	public Employee findEmployeeByName(String name);
+
 }
