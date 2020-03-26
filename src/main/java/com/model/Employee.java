@@ -1,5 +1,6 @@
+
 package com.model;
-import org.springframework.data.annotation.Id;
+import org.dizitart.no2.objects.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 //mongo database anootation
 @Document(collection = "employee")
